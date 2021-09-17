@@ -207,3 +207,4 @@ def penalización_interior(xn, f,g, tolerancia):
     print(mini, 'es el punto mínimo de este problema')
   else:
     miu=miu*eta
+    penalizacion_interior(mini, f,g, tolerancia,miu)
