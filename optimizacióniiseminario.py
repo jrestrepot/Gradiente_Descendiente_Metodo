@@ -194,7 +194,7 @@ z = sp.Symbol('z')
 hessinicial = np.identity(3)
 BFGS(0.5*10**(-5),x0, f3(x,y,z), 0, hessinicial)
 
-def penalización_interior(xn, f,g, tolerancia):
+def penalizacion_interior(xn, f,g, tolerancia):
   miu = 10
   eta = 0.05
   if -tolerancia > g.subs([(x,xn[0]),(y, xn[1]),(z,xn[2])]):
